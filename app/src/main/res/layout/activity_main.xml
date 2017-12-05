@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.sazid.couchbasesugarorm.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.sazid.couchbasesugarorm.MainActivity">
+
+        <EditText
+            android:id="@+id/a_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Value of a"
+
+            />
+
+        <EditText
+            android:id="@+id/b_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_value"
+            android:gravity="center"
+            android:hint="Value of B" />
+
+        <EditText
+            android:id="@+id/c_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b_value"
+            android:gravity="center"
+            android:hint="Value of C" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/c_value"
+            android:layout_centerHorizontal="true"
+            android:text="submit" />
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:layout_below="@+id/submit_button"
+            />
+        <TextView
+            android:id="@+id/set_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/check_button"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
